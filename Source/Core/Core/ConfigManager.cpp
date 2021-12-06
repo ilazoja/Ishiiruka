@@ -961,6 +961,10 @@ bool SConfig::AutoSetup(EBootBS2 _BootBS2)
 			{
 				m_gameType = GAMETYPE_MELEE_UPTM;
 			}
+			else if (m_strGameID == "RSBE01")
+			{
+				m_gameType = GAMETYPE_BRAWL;
+			}
 
 			INFO_LOG(BOOT, "GameType: %d", m_gameType);
 
